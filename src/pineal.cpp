@@ -2,7 +2,7 @@
 // Name				: pineal.cpp
 // Author			: kdorman (kenny.dorman@gmail.com)
 // Version		 :
-// Copyright	 : GPL2 + CC
+// Copyright	 : GPL2 + CC BY-NC-SA
 // Description : Hello World in C++, Ansi-style
 //============================================================================
 
