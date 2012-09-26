@@ -28,6 +28,7 @@ class GuiElement {
 		GuiElement( Position* _position ) {
 			position.setPosition(_position);
 		}
+    
 		/**
 		 * Empty destructor
 		 */

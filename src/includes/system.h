@@ -59,8 +59,8 @@ class SystemEngine {
 			display_width = monitor_info->x2 - monitor_info->x1 - 30;
 			display_height = monitor_info->y2 - monitor_info->y1 - 30;
 			//*/
-//			display_width = 1280;
-//			display_height = 720;
+      //			display_width = 1280;
+      //			display_height = 720;
 
 			// Init game elements
 			//display = al_create_display(width, height);
@@ -158,8 +158,8 @@ class SystemEngine {
 				done = true;
 			} else if(ev->type == ALLEGRO_EVENT_TIMER) {
 				player->move(
-							(keys[RIGHT] * speed_multiplier * 10) - (keys[LEFT] * speed_multiplier * 10),
-							(keys[DOWN] * speed_multiplier * 10) - (keys[UP] * speed_multiplier * 10)
+							(keys[RIGHT] * speed_multiplier * 8) - (keys[LEFT] * speed_multiplier * 8),
+							(keys[DOWN] * speed_multiplier * 8) - (keys[UP] * speed_multiplier * 8)
 						);
 
 				redraw = true;
