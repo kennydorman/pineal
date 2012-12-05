@@ -85,7 +85,7 @@ class GuiElement {
 					position.getY() + 12,
 					al_map_rgb(0,0,0));
 			al_draw_filled_rectangle(
-					position.getX()+18,dw
+					position.getX()+18,
 					position.getY()+8,
 					position.getX() + 28,
 					position.getY() + 12,

@@ -19,12 +19,14 @@ using std::string;
 #include "includes/system.h"
 #include "includes/position.h"
 #include "includes/gui_element.h"
+#include "includes/game_map.h"
 
 const char* APP_FONT = "/usr/share/fonts/truetype/ubuntu-font-family/Ubuntu-R.ttf";
 
 int main ( void ) {
 	// Game engine initialisation
 	SystemEngine system_engine = SystemEngine( );
+	GameMap* game_map = new GameMap( "untitled.tmx" );
 
 	if (!system_engine.error) {
 		// Game Loop
@@ -74,6 +76,7 @@ int main ( void ) {
 		al_destroy_font( font24 );
 		al_destroy_font( font36 );
 		al_destroy_display( system_engine.display );
+		delete game_map;
 	}
 
 	return 0;
