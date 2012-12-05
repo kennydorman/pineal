@@ -76,8 +76,20 @@ class GuiElement {
 					position.getX(),
 					position.getY(),
 					position.getX() + 30,
-					position.getY() + 30,
-					al_map_rgb(255,0,255));
+					position.getY() + 60,
+					al_map_rgb(255,255,255));
+			al_draw_filled_rectangle(
+					position.getX()+8,
+					position.getY()+8,
+					position.getX() + 12,
+					position.getY() + 12,
+					al_map_rgb(0,0,0));
+			al_draw_filled_rectangle(
+					position.getX()+18,dw
+					position.getY()+8,
+					position.getX() + 28,
+					position.getY() + 12,
+					al_map_rgb(0,0,0));
 		}
 };
 
